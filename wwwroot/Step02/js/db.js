@@ -31,10 +31,10 @@ const reader = options => access(options, 'readonly');
 const writer = options => access(options, 'readwrite');
 
 const databaseOptions = {
-    name: 'pwa-step03-db',
+    name: 'pwa-step02-db',
     version: 1,
     keyPath: 'Uid',
-    objectStoreName: 'pwa-step03-db-objectStore'
+    objectStoreName: 'pwa-step02-db-objectStore'
 };
 
 function list(){
