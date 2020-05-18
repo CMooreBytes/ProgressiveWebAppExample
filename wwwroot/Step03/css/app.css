@@ -1,0 +1,20 @@
+.online-indicator {
+    display:inline-block;
+    width:1em;
+    height:1em;
+    margin-bottom:1em;
+    background-color: red;
+}
+
+.online-indicator.status-online {
+    background-color: green;
+}
+
+.online-indicator::after{
+    margin-left:1.1em;
+    content: "Offline";
+}
+
+.online-indicator.status-online::after{
+    content: "Online";
+}

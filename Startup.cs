@@ -53,11 +53,15 @@ namespace PWA
                 endpoints.MapPost("/Step03/form", async context => await context.Response.WriteAsync("Form Submitted"));
                 endpoints.MapPost("/Step04/form", async context => await context.Response.WriteAsync("Form Submitted"));
                 endpoints.MapPost("/Step05/form", async context => await context.Response.WriteAsync("Form Submitted"));
+
                 endpoints.MapGet("/Step01/api/data", DataObjectsAPIHandler);
                 endpoints.MapGet("/Step02/api/data", DataObjectsAPIHandler);
                 endpoints.MapGet("/Step03/api/data", DataObjectsAPIHandler);
                 endpoints.MapGet("/Step04/api/data", DataObjectsAPIHandler);
                 endpoints.MapGet("/Step05/api/data", DataObjectsAPIHandler);
+
+
+                endpoints.MapPost("/Step03/sync", async context => await context.Response.WriteAsync("Data synced"));
             });
         }
     }
