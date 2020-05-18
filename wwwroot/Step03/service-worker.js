@@ -1,4 +1,4 @@
-importScripts('js/db.js')
+importScripts('./js/db.js')
 const APP_CACHE_NAME = "pwa-step03-app-cache";
 const DATA_CACHE_NAME = "pwa-step03-data-cache";
 
